@@ -1,0 +1,54 @@
+body {
+    background-color: papayawhip;
+}
+p {
+    color: darkgrey;
+}
+.beerPhoto {
+    height: 12em;
+    width: 4em;
+    text-align: center;
+    margin: auto;
+
+    /*float: bottom;*/
+}
+h1 {
+    text-align: center;
+}
+.main-header {
+    text-align: center;
+    color: chocolate;
+}
+.header {
+    height: 4em;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+
+}
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        flex: 1 1 calc(33% - 2rem);
+    }
+}
